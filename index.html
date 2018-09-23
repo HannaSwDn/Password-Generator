@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Random Password Generator</title>
+</head>
+<body>
+  <h1>Password Generator</h1>
+  <p>How many letters do you want in your password?</p>
+  <input id="letters" placeholder="enter a number...">
+
+  <p>Do you want a mix of lowercase and uppercased letters?</p>
+  <select id="select">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+
+  <p>And how many numbers do you want in your password?</p>
+  <input id="numbers" placeholder="enter a number...">
+
+  <button onclick="generatePassword()">Get password!</button>
+
+  <p id="myPassword">your password will be displayed here</p>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
